@@ -23,10 +23,6 @@ class DefaultFirebaseOptions {
       );
     }
     switch (defaultTargetPlatform) {
-      case TargetPlatform.android:
-        return android;
-      case TargetPlatform.iOS:
-        return ios;
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
@@ -49,20 +45,5 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAFd_Hkjyq3OBVGh9Y6mEkbeHXzmDrRgrY',
-    appId: '1:178476595897:android:e31fa63cfc967f01d9b968',
-    messagingSenderId: '178476595897',
-    projectId: 'scholar-chat-a658d',
-    storageBucket: 'scholar-chat-a658d.firebasestorage.app',
-  );
 
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAVNG-jEcP95ngn2f862SZ3mqUAb-IPsFM',
-    appId: '1:178476595897:ios:dfa659875b824c7dd9b968',
-    messagingSenderId: '178476595897',
-    projectId: 'scholar-chat-a658d',
-    storageBucket: 'scholar-chat-a658d.firebasestorage.app',
-    iosBundleId: 'com.example.chatApp',
-  );
 }
